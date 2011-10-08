@@ -1,0 +1,16 @@
+Classe Unidade Curricular:
+* String Name: Nome da unidade curricular.
+* String Acronym: Acrónimo
+* class MYTYPE xpto:
+  * Char coursetype: Obrigatória ou opcional.
+  * char semester: Semestre curricular em que é oferecida.
+* List Unidade Curriculares requiredCourses:Pré-requisitos (outras unidades curriculares).
+* Char ects: Créditos ECTS.
+
+Classe Ficha de Unidade Curricular:
+* Classe Unidade Curricular
+* String objectives: Objetivos
+* String learningResults: resultados da aprendizagem
+* String resultEvaluation: avaliação dos resultados de aprendizagem
+* String courseprogram:  programa resumido de definidos em texto livre
+* String language:
