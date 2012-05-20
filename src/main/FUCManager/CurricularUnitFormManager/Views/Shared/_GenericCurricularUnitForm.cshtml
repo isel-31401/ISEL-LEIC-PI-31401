@@ -1,0 +1,36 @@
+﻿@using CurricularUnitFormManager.Models.CurricularUnit
+@model AbstractCurricularUnitForm
+
+    <div class="content">
+        <div class="clearfix">
+            Nome: @Model.CourseFile.CUnit.Name<br/>
+            Acrónimo: @Model.CourseFile.CUnit.Acronym<br/>
+            Enquadramento:  @Model.CourseFile.Type.Degree
+			                @Model.CourseFile.Type.Semester
+			                @Model.CourseFile.Type.CourseType
+             <br/>
+            Créditos: @Model.CourseFile.CUnit.ECTS<br/>
+            Pré-Requesitos:         
+            @foreach (var item in Model.CourseFile.RequiredCourses)
+            {
+                @item.CUnit.Name;
+            }
+        </div>
+    </div>
+
+<h2>Objectivos</h2>
+    <p>
+    @Model.CourseFile.Description.Objectives<br/><br/>
+    </p>
+<h2>Resultados de aprendizagem</h2>
+    <p>
+    @Model.CourseFile.Description.LearningResults<br/><br/>
+    </p>
+<h2>Avaliação dos resultados de aprendizagem</h2>
+    <p>
+    @Model.CourseFile.Description.ResultEvaluation<br/><br/>
+    </p>
+<h2>Programa resumido</h2>
+    <p>
+    @Model.CourseFile.Description.CourseProgram<br/><br/>
+    </p>

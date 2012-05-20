@@ -1,0 +1,59 @@
+﻿@using CurricularUnitFormManager.Models.CurricularUnit
+@model CUFsListViewModel
+<div id="teste"><h1>@ViewBag.ajax</h1></div>
+<span id = "ItemsOrderSpan">
+    <label>Order</label>
+    @foreach( String o in Model.OrderPage){
+        <label>
+        [@Html.ActionLink("" + o + "", Model.Method, new { pagenr = Model.PageNumber, itemsnr = Model.ItemsNumber, order = o })]
+        </label>
+    }
+</span>
+
+<span id = "ItemsNbrSpan">
+    <label>Page</label>
+    @foreach( int p in Model.ItemsPerPage){
+        <label>
+        [@Html.ActionLink("" + p + "", Model.Method, new { pagenr = Model.PageNumber, itemsnr = p, order = Model.Order })]
+        </label>
+    }
+</span>
+
+<div id = "CufListDiv">
+    @{Html.RenderPartial("_GenericList", Model.CUFList);}
+</div>
+
+<div id = "PageNavigationDiv" >
+    @if (Model.PageNumber > 0)
+    {
+        <label>
+        [@Html.ActionLink("First", Model.Method, new { pagenr = 0, itemsnr = Model.ItemsNumber, order = Model.Order })]
+        </label> 
+        <label>
+        [@Html.ActionLink("Previous", Model.Method, new { pagenr = (Model.PageNumber - 1), itemsnr = Model.ItemsNumber, order = Model.Order })]
+        </label>
+    }
+    @for(int i = 0 ; i < Model.AmountPage; ++i){
+        if (i == Model.PageNumber)
+        {
+            <label>
+            [@i]
+            </label>
+        }
+        else 
+        { 
+            <label>
+            [@Html.ActionLink("" + i, Model.Method, new { pagenr = i, itemsnr = Model.ItemsNumber, order = Model.Order })]
+            </label> 
+        }
+    }
+    @if (!Model.LastPage)
+    {
+         <label>
+         [@Html.ActionLink("Next", Model.Method, new { pagenr = (Model.PageNumber + 1), itemsnr = Model.ItemsNumber, order = Model.Order })]
+         </label>
+         <label>
+         [@Html.ActionLink("Last", Model.Method, new { pagenr = (Model.AmountPage - 1), itemsnr = Model.ItemsNumber, order = Model.Order })]
+         </label>
+    }
+</div>

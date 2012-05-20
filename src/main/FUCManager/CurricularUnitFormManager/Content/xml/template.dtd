@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT fuc-repository (degree+)>
+<!ATTLIST fuc-repository
+          school CDATA #IMPLIED
+          language CDATA #IMPLIED>
+<!ELEMENT degree (fuc+)>
+<!ATTLIST degree
+          degree-name CDATA #REQUIRED
+          status CDATA #REQUIRED>
+<!ELEMENT fuc (uc, description-uc)>
+<!ATTLIST fuc
+          id CDATA #REQUIRED>
+<!ELEMENT uc (required-uc, type-uc)>
+<!ATTLIST uc
+          name CDATA #REQUIRED
+          acronym CDATA #REQUIRED
+          ects CDATA #REQUIRED>
+<!ELEMENT required-uc (ruc*)>
+<!ELEMENT ruc EMPTY>
+<!ATTLIST ruc
+          name CDATA #REQUIRED
+          acronym CDATA #REQUIRED>
+<!ELEMENT type-uc EMPTY>
+<!ATTLIST type-uc
+          courseType CDATA #REQUIRED
+          semester CDATA #REQUIRED
+          degree CDATA #REQUIRED>
+<!ELEMENT description-uc (objectives, learningResults, resultEvaluation, courseProgram, language)>
+<!ELEMENT objectives (#PCDATA)>
+<!ELEMENT learningResults (#PCDATA)>
+<!ELEMENT resultEvaluation (#PCDATA)>
+<!ELEMENT courseProgram (#PCDATA)>
+<!ELEMENT language (#PCDATA)>

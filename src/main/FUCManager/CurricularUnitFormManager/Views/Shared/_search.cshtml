@@ -1,0 +1,12 @@
+﻿<div id="SearchDiv">
+    @using (Html.BeginForm("Search", "Official", FormMethod.Get, new { id = "SearchForm" }))
+    {
+    <div id="SearchInputDiv">
+        
+            <label for="tags">Search:</label>
+            <input id="tags" type="text" name="SearchValue"/>
+            <input id="SearchButton" type="submit" value="Search"/>
+    </div>
+    }
+
+</div>

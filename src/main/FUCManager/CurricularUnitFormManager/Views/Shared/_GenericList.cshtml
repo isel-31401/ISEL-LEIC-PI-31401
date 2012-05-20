@@ -1,0 +1,17 @@
+﻿@using CurricularUnitFormManager.Models.CurricularUnit
+@model IEnumerable<CUFNameURIModel>
+
+<div class="span4">
+    <ul>
+        @foreach (CUFNameURIModel cuf in Model)
+        {
+            <li>
+                @if (cuf.GetVersion() != 0){
+                    @Html.ActionLink(cuf.GetName(), cuf.GetAction(), new { acr = cuf.GetACR(), id = cuf.GetVersion() });
+                }else{
+                    @Html.ActionLink(cuf.GetName(), cuf.GetAction(), new { acr = cuf.GetACR()});
+                }
+            </li>
+        }
+    </ul>
+</div>

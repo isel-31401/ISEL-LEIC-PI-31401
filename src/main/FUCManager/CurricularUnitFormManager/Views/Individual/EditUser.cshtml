@@ -1,0 +1,81 @@
+﻿@using CurricularUnitFormManager.Models.Individual
+@model IndividualViewModel
+
+@{
+    ViewBag.Title = "Edit User";
+}
+
+<h2>Edit User</h2>
+
+
+<div class="container-fluid">
+    <div class="sidebar">
+         <img class="thumbnail" src="@Url.Content("/Content/user/"+Model.User.PhotoName)" title="@Model.User.FullName" height="180"/>
+    </div>
+    <div class="content">
+        <div class="clearfix">
+            @using (Html.BeginForm("EditUser", "Individual", FormMethod.Post, new { id = "FormEditUser", enctype = "multipart/form-data" }))
+            {
+                @Html.ValidationSummary(true, "Account edition was unsuccessful. Please correct the errors and try again.")
+                <div>
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        <div class="editor-label">
+                            @Html.LabelFor(m => m.User.UserName)
+                        </div>
+                        <div class="editor-field">
+                            @Html.HiddenFor(m => m.User.UserName)
+                            @Html.DisplayFor(m => m.User.UserName)
+                            
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(m => m.User.FullName)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextBoxFor(m => m.User.FullName)
+                            @Html.ValidationMessageFor(m => m.User.FullName)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(m => m.User.Email)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextBoxFor(m => m.User.Email)
+                            @Html.ValidationMessageFor(m => m.User.Email)
+
+                        </div>
+
+		                <div class="editor-label">
+			                @Html.LabelFor(m => m.file)
+		                </div>
+		                <div class="editor-field"> 
+			                @Html.TextBoxFor(m => m.file, new { type = "file" })
+                            @Html.ValidationMessageFor(m => m.file)
+		                </div>
+
+
+                        <div class="editor-label">
+                            @Html.LabelFor(m => m.User.CreationDate)
+                        </div>
+                        <div class="editor-field">
+                            @Html.DisplayFor(m => m.User.CreationDate)
+                            @Html.HiddenFor(m => m.User.CreationDate)
+                        </div>
+                        <div class="editor-label">
+                            @Html.LabelFor(m => m.User.LastActivityDate)
+                        </div>
+                        <div class="editor-field">
+                            @Html.DisplayFor(m => m.User.LastActivityDate)
+                            @Html.HiddenFor(m => m.User.LastActivityDate)
+                        </div>
+                        
+                    </fieldset>
+                    <div class="input"><input type='submit' value="Submit" /> <input type='reset' value="Reset"/></div>
+                </div>
+                
+                }
+        </div>
+    </div>
+</div>
+      

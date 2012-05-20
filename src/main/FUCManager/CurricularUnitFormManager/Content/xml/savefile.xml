@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE fuc-repository PUBLIC "template.dtd" "">
+<fuc-repository school="Instituto Superior de Engenharia de Lisboa" language="pt">
+  <fuc id="2">
+    <uc name="Lógica e Sistemas Digitais" acronym="LSD" ects="60">
+      <required-uc />
+      <type-uc courseType="M" semester="S1" degree="EIC" />
+    </uc>
+    <description-uc>
+      <objectives>Esta unidade curricular representa para a maioria dos alunos um primeiro contacto com a lógica e os sistemas digitais. É objectivo desta unidade curricular dotar os alunos com a capacidade para projectar sistemas digitais de média complexidade em lógica random. </objectives>
+      <learningResults>Os estudantes que terminam com sucesso esta unidade curricular serão capazes de:
+    Implementar funções booleanas utilizando os operadores e as propriedades da álgebra de Boole
+    Realizar os operadores básicos da aritmética utilizando lógica digital
+    Implementar circuitos sequenciais
+    Utilizar hardware programável para implementação de circuitos combinatórios e sequenciais
+    Utilizar ferramentas de CAD para desenho, descrição e teste de circuitos digitais.
+    Escrever relatórios onde se descreva o problema e as opções tomadas para concretizar uma solução.
+        </learningResults>
+      <resultEvaluation>Os resultados de aprendizagem (1) a (4) são avaliados individualmente através do teste escrito e das fichas realizadas durante o semestre.Durante o acompanhamento dos trabalhos de grupo realizados nas aulas práticas são avaliados os resultados de aprendizagem (1) a (5).Os resultados de aprendizagem (6) são avaliados na discussão final dos trabalhos de grupo.</resultEvaluation>
+      <courseProgram>Dispositivos binários. Álgebra de comutação. Transístor como dispositivo binário. Circuitos combinatórios. Teoremas da álgebra de Boole. simplificação de expressões. Mapas de Karnaugh. Implementação de funções com portas SSI. Portas lógicas com saída Tristate. Multiplexer, demultiplexer/decoder. Lógica programável PAL e linguagem de descrição hardware CUPL. Códigos numéricos. Operações aritméticas. Análise e síntese de somadores / subtractores e comparadores. Circuitos sequenciais. Flip-flops latch e edge triggered. Circuitos MSI contadores e shift registers. Implementação de sistemas sequenciais com circuitos MSI e lógica programável.</courseProgram>
+      <language>Portuguese</language>
+    </description-uc>
+  </fuc>
+  <fuc id="1">
+    <uc name="Arquitectura de Computadores I" acronym="AC1" ects="60">
+      <required-uc>
+        <ruc name="Lógica e Sistemas Digitais" acronym="LSD" />
+      </required-uc>
+      <type-uc courseType="M" semester="S2" degree="EIC" />
+    </uc>
+    <description-uc>
+      <objectives>Habilitar os alunos a utilizar e compreender as arquitecturas baseadas em microprocessadores. </objectives>
+      <learningResults>
+        Os estudantes que terminam com sucesso esta unidade curricular serão capazes de:
+           Compreender a arquitectura de um computador.
+           Compreender a estrutura interna de um processador.
+           Utilizar ferramentas para produção e teste de programas assembly.
+           Realizar e testar programas de pequena complexidade, escritos em assembly.
+           Compreender e utilizar dispositivos de entrada/saída, temporizadores/contadores e mecanismos de interrupção.
+           Interligar o processador com dispositivos externos utilizando os sinais de diálogo.
+        </learningResults>
+      <resultEvaluation>
+        Os resultados de aprendizagem (1), (4) e (5) são avaliados individualmente através do teste escrito e das fichas
+        realizadas durante o semestre.Durante o acompanhamento dos trabalhos de grupo realizados nas aulas práticas são
+        avaliados os resultados de aprendizagem (3) a (6).Os resultados de aprendizagem (7) são avaliados na discussão final
+        dos trabalhos de grupo.
+        </resultEvaluation>
+      <courseProgram>Memória de acesso aleatório, barramentos;
+        transferência de informação de e para a memória;
+        Estrutura interna de um processador, salientando a sua natureza enquanto máquina de estados programável;
+        Estudo de uma arquitectura didáctica, conjunto de instruções, linguagem máquina, assembly, ferramenta para produção e
+        teste de software. Sinais envolvidos no acesso a memória;
+        descodificação de endereços, sinais de sincronização e acesso DMA.
+        Periféricos de entrada/saída (paralelos e série) e temporizadores. Mecanismo de interrupção.
+        Desenvolvimento de programas envolvendo interacção com dispositivos externos.
+        </courseProgram>
+      <language>Portuguese</language>
+    </description-uc>
+  </fuc>
+  <fuc id="0">
+    <uc name="Aprendizagem Automática" acronym="AA" ects="0">
+      <required-uc />
+      <type-uc courseType="M" semester="0" degree="EIC" />
+    </uc>
+    <description-uc>
+      <objectives>
+      </objectives>
+      <learningResults>
+      </learningResults>
+      <resultEvaluation>
+      </resultEvaluation>
+      <courseProgram>
+      </courseProgram>
+      <language>
+      </language>
+    </description-uc>
+  </fuc>
+  <fuc id="0">
+    <uc name="Codificação de Sinais Multimédia" acronym="CSM" ects="0">
+      <required-uc />
+      <type-uc courseType="M" semester="0" degree="EIC" />
+    </uc>
+    <description-uc>
+      <objectives>
+      </objectives>
+      <learningResults>
+      </learningResults>
+      <resultEvaluation>
+      </resultEvaluation>
+      <courseProgram>
+      </courseProgram>
+      <language>
+      </language>
+    </description-uc>
+  </fuc>
+</fuc-repository>

@@ -1,0 +1,81 @@
+﻿@using CurricularUnitFormManager.Models.Individual
+@model IndividualViewModel
+
+@{
+    ViewBag.Title = "ViewUser";
+}
+@if (User.Identity.IsAuthenticated)
+{
+    <ul class="pills" id="menu">
+        @if (Request.IsAuthenticated)
+        {
+            <li>@Html.ActionLink("Edit", "EditUser", "Individual", new { username = Model.User.UserName},null)</li>
+            <li>@Html.ActionLink("Change Password", "ChangePassword", "Account", new { username = Model.User.UserName }, null)</li>
+        }
+    </ul>
+}
+<h2>ViewUser</h2>
+
+
+<div class="container-fluid">
+    <div class="sidebar">
+        <img class="thumbnail" src="@Url.Content("/Content/user/" + Model.User.PhotoName)" title="@Model.User.FullName" height="180"/>
+    </div>
+    <div class="content">
+        <div class="clearfix">
+            <fieldset>
+                <legend>Account Information</legend>
+                
+                <div class="editor-label">
+                    @Html.Label("UserName")
+                </div>
+                <div class="editor-field">
+                    @Html.DisplayFor(m => m.User.UserName)
+                </div>
+
+                <div class="editor-label">
+                    @Html.Label("FullName")
+                </div>
+                <div class="editor-field">
+                    @Html.DisplayFor(m => m.User.FullName)
+                </div>
+
+                <div class="editor-label">
+                    @Html.Label("Email")
+                </div>
+                <div class="editor-field">
+                    @Html.DisplayFor(m => m.User.Email)
+                </div>
+
+                <div class="editor-label">
+                    @Html.Label("PhotoName")
+                </div>
+                <div class="editor-field">
+                    @Html.DisplayFor(m => m.User.PhotoName)
+                </div>
+                    <div>
+                            @Html.Label("Roles")
+                            <br/>
+                            @for (int i = 0; i < Model.AvailableRoles.Length; ++i)
+                            {
+                                @Html.Label(Model.AvailableRoles[i]);
+                                @Html.CheckBox(Model.AvailableRoles[i], Model.User.isInRole(Model.AvailableRoles[i]), new { @disabled = "true" });
+                            }
+                        </div>
+                <div class="editor-label">
+                   @Html.Label("User Creation Date")
+                </div>
+                <div class="editor-field">
+                    @Html.DisplayFor(m => m.User.CreationDate)
+                </div>
+                <div class="editor-label">
+                    @Html.Label("User Last Activity Date")
+                </div>
+                <div class="editor-field">
+                    @Html.DisplayFor(m => m.User.LastActivityDate)
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+      

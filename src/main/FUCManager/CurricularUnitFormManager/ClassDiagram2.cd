@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.AbstractCurricularUnitForm" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAAAACAAAAIAAAAQgAAAIAAAAAAAAAAEIAgIAAAAA=</HashCode>
+      <FileName>Models\CurricularUnit\AbstractCurricularUnitForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.ProposalCurricularUnitForm" Collapsed="true">
+    <Position X="1.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CurricularUnit\ProposalCurricularUnitForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.CUFNameURIModel" Collapsed="true">
+    <Position X="2.25" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAABAIAAAIAAAAAAAABAAAAAAAAAAgABABAA=</HashCode>
+      <FileName>Models\CurricularUnit\CUFNameURIModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.CufRepoModel" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JEABAAAAAgAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Models\CurricularUnit\CufRepoModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.CUFsListModel" Collapsed="true">
+    <Position X="4.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAIAAAAgAAQAA=</HashCode>
+      <FileName>Models\CurricularUnit\CUFsListModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.CUFsListViewModel" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAGAAQAAAAAAAAAAAAAgQACBAACAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CurricularUnit\CUFsListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.CurricularUnit" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAgAAAAATAAAAAAAAAAAAAAACgAAA=</HashCode>
+      <FileName>Models\CurricularUnit\CurricularUnit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.CurricularUnitDescription" Collapsed="true">
+    <Position X="10.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACQICACAAEAEQAAABAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CurricularUnit\CurricularUnitDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.CurricularUnitForm" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAQQAAQAAAggAQEAgBAAAAAAAAAAABAAQAAAAgCBAA=</HashCode>
+      <FileName>Models\CurricularUnit\CurricularUnitForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.CurricularUnitType" Collapsed="true">
+    <Position X="10.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAgAAAAAIAIAAAAQAgAAAAAAgCAAAAAAAAA=</HashCode>
+      <FileName>Models\CurricularUnit\CurricularUnitType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.CurricularUnit.OfficialCurricularUnitForm" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CurricularUnit\OfficialCurricularUnitForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CurricularUnitFormManager.Models.CurricularUnit.ICurricularUnitForm" Collapsed="true">
+    <Position X="2.75" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAACAAAAAAAAAQgAAAIAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Models\CurricularUnit\ICurricularUnitForm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CurricularUnitFormManager.Models.CurricularUnit.Degree" Collapsed="true">
+    <Position X="13" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\CurricularUnit\CurricularUnitType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CurricularUnitFormManager.Models.CurricularUnit.CourseType" Collapsed="true">
+    <Position X="13" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAA=</HashCode>
+      <FileName>Models\CurricularUnit\CurricularUnitType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CurricularUnitFormManager.Models.CurricularUnit.Semester" Collapsed="true">
+    <Position X="13" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAACAAAAAAABAAAAAQAAgAAAAIAA=</HashCode>
+      <FileName>Models\CurricularUnit\CurricularUnitType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

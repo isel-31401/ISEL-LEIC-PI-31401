@@ -1,0 +1,6 @@
+<users>
+<user IndividualId="1" FullName="Nuno Cancelo" UserName="admin" Password="123" Email="x@x.x" PhotoName="anonymous.png" SecurityAnswer="what" SecurityQuestion="what" Roles="User , Anonymous , Colaborator , Coordenator , Administrator" />
+<user IndividualId="2" FullName="Nuno Alexandre Cancelo" UserName="nac" Password="123" Email="x@x.x" PhotoName="anonymous.png" SecurityAnswer="what" SecurityQuestion="what" Roles="User , Anonymous , Colaborator , Coordenator" />
+<user IndividualId="3" FullName="Nuno Goncalo Sousa" UserName="ngs" Password="123" Email="x@x.x" PhotoName="anonymous.png" SecurityAnswer="what" SecurityQuestion="what" Roles="User , Anonymous , Colaborator" />
+<user IndividualId="4" FullName="Ricardo Filipe Marta" UserName="rfm" Password="123" Email="x@x.x" PhotoName="anonymous.png" SecurityAnswer="what" SecurityQuestion="what" Roles="User , Anonymous , Coordenator" />
+</users>

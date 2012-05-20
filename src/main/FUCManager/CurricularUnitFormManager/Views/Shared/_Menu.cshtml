@@ -1,0 +1,12 @@
+﻿<text>
+    <ul class="pills" id="menu">
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("Cuf Manager", "Index", "Cuf")</li>
+    @if(Request.IsAuthenticated) {
+        <li>@Html.ActionLink("New Proposal", "New", "Proposal")</li>
+    }
+    </ul>
+</text>
+
+
+ 

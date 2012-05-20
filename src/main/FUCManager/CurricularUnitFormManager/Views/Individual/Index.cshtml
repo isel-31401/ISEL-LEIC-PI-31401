@@ -1,0 +1,18 @@
+﻿@using CurricularUnitFormManager.Models.Individual
+@model IEnumerable<IndividualRepoModel>
+           
+@{
+    ViewBag.Title = "ListUsers";
+}
+
+<h2>User List</h2>
+<div class="span4">
+    <ul>
+        @foreach (IndividualRepoModel user in Model)
+        {
+            <li>
+                    @Html.ActionLink(user.FullName, "ViewUser", new { username = user.UserName});
+            </li>
+        }
+    </ul>
+</div>

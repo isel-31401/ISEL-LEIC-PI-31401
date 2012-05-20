@@ -1,0 +1,92 @@
+﻿@model CurricularUnitFormManager.Models.CurricularUnit.AbstractCurricularUnitForm
+
+<div>
+    <fieldset>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.CUnit.Acronym)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.CourseFile.CUnit.Acronym)
+            @Html.ValidationMessageFor(m => m.CourseFile.CUnit.Acronym)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.CUnit.Name)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.CourseFile.CUnit.Name)
+            @Html.ValidationMessageFor(m => m.CourseFile.CUnit.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.Type.Degree)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.CourseFile.Type.Degree)
+            @Html.ValidationMessageFor(m => m.CourseFile.Type.Degree)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.Type.Semester)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.CourseFile.Type.Semester)
+            @Html.ValidationMessageFor(m => m.CourseFile.Type.Semester)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.CUnit.ECTS)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.CourseFile.CUnit.ECTS)
+            @Html.ValidationMessageFor(m => m.CourseFile.CUnit.ECTS)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.Type.CourseType)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.CourseFile.Type.CourseType)
+            @Html.ValidationMessageFor(m => m.CourseFile.Type.CourseType)
+            (M - Mandatory, O - Optional)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.RequiredCourses)
+        </div>
+        <div class="editor-field">
+           @* @Html.TextBoxFor(m => m.CourseFile.CUnit.Name)*@
+            @*@Html.ValidationMessageFor(m => m.RequiredCourses)*@
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.Description.Objectives)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(m => m.CourseFile.Description.Objectives)
+            @Html.ValidationMessageFor(m => m.CourseFile.Description.Objectives)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.Description.LearningResults)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(m => m.CourseFile.Description.LearningResults)
+            @Html.ValidationMessageFor(m => m.CourseFile.Description.LearningResults)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.Description.ResultEvaluation)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(m => m.CourseFile.Description.ResultEvaluation)
+            @Html.ValidationMessageFor(m => m.CourseFile.Description.ResultEvaluation)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.CourseFile.Description.CourseProgram)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(m => m.CourseFile.Description.CourseProgram)
+            @Html.ValidationMessageFor(m => m.CourseFile.Description.CourseProgram)
+        </div>
+    </fieldset>
+</div>

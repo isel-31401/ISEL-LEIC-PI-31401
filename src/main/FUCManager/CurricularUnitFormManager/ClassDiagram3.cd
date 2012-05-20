@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CurricularUnitFormManager.Models.Repository.CurricularUnitFormMemoryRepository&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="2.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAAAAABAAABAAAAARAAAAAAAAAAgAggAAAAgACI=</HashCode>
+      <FileName>Models\Repository\CurricularUnitFormMemoryRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.Repository.ProposalCurricularUnitFormRepositoryLocator" Collapsed="true">
+    <Position X="4.5" Y="2.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Repository\ProposalCurricularUnitFormRepositoryLocator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.Repository.CurricularUnitFormRepository" Collapsed="true">
+    <Position X="1.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAEAAAAACAAAKAAAQCQAAAAAAEAQAACQAAgAAAgCKA=</HashCode>
+      <FileName>Models\Repository\CurricularUnitFormRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.Repository.IndividualRepository" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QASEAAAACSAAAAoFgABBAAgAAAIJAAACXCAIAABEEAA=</HashCode>
+      <FileName>Models\Repository\IndividualRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurricularUnitFormManager.Models.Repository.OfficialCurricularUnitFormRepositoryLocator" Collapsed="true">
+    <Position X="4.5" Y="3" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Repository\OfficialCurricularUnitFormRepositoryLocator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CurricularUnitFormManager.Models.Repository.ICurricularUnitFormRepository&lt;T&gt;" Collapsed="true">
+    <Position X="8.25" Y="1.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAABAAAAAAAAABAAAAAAAAAAgAggAAAAAAAI=</HashCode>
+      <FileName>Models\Repository\ICurricularUnitFormRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

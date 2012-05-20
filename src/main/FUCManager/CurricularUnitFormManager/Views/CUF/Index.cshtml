@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "CUFs List";
+}
+<h3>Next Step</h3>
+@Html.ActionLink("Official List", "Index", "Official")
+
+@if (Context.User.Identity.IsAuthenticated)
+{
+    <br />
+    @Html.ActionLink("Proposal List", "Index", "Proposal")
+}

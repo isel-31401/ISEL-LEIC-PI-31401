@@ -1,0 +1,31 @@
+﻿@model CurricularUnitFormManager.Models.CurricularUnit.AbstractCurricularUnitForm
+
+@{
+    ViewBag.Title = "Proposal Detail";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <ul class="pills" id="menu">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <li>@Html.ActionLink("Edit Fuc", "Edit", "Proposal", new { acr = Model.CourseFile.CUnit.Acronym , version = Model.Version },null)</li>
+            <li>@Html.ActionLink("Cancel Fuc", "Cancel", "Proposal", new { acr = Model.CourseFile.CUnit.Acronym , version = Model.Version  }, null)</li>
+            if (User.IsInRole("Coordenator"))
+            {
+                <li>@Html.ActionLink("Accept Fuc", "Accept", "Proposal", new { acr = Model.CourseFile.CUnit.Acronym , version = Model.Version  }, null)</li>
+            }
+        }
+    </ul>
+}
+<h2>Detail</h2>
+<h2>ProposalCurricularUnitForm</h2>
+<h1>Proposta de Unidade Curricular</h1>
+@{Html.RenderPartial("_GenericCurricularUnitForm", Model);}
+<p>
+    Version:@Model.Version<br />
+    Owner:@Model.Username<br />
+    Timestamp:@Model.UserTimeStamp<br />
+    IsValidated: @Model.IsValid
+</p>
+<a onclick="history.back();return true;">Back</a>

@@ -1,0 +1,28 @@
+﻿@model CurricularUnitFormManager.Models.CurricularUnit.AbstractCurricularUnitForm
+
+@{
+    ViewBag.Title = "Accept Proposal";
+}
+
+<h2>Accept</h2>
+<h2>ProposalCurricularUnitForm</h2>
+<h1>Proposta de Unidade Curricular</h1>
+@{Html.RenderPartial("_GenericCurricularUnitForm", Model);}
+<p>
+    Version:@Model.Version<br />
+    Owner:@Model.Username<br />
+    Timestamp:@Model.UserTimeStamp<br />
+    IsValidated: @Model.IsValid
+</p>
+<div class="container-fluid">
+    <div class="content">
+        <div class="clearfix">
+            @using (Html.BeginForm("Accept", "Proposal", FormMethod.Post, new { id = "FormAcceptProposal" }))
+            {
+                @Html.Hidden("acr", Model.CourseFile.CUnit.Acronym);
+                @Html.Hidden("version", Model.Version);
+                <div class="input"><input type='submit' value="Accept" /></div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+       <user
+        IndividualId="1"
+        FullName="Nuno Alexandre Cancelo"
+        UserName="admin"
+        Password="123"
+        Email="x@x.x"
+        PhotoName="anonymous.png"
+        SecurityQuestion="who"
+        SecurityAnswer="what"
+        Roles="Anonymous,Colaborator,Coordenator,Administrator"
+       />
+       <user
+        IndividualId="1"
+        FullName="Nuno Alexandre Cancelo"
+        UserName="nac"
+        Password="123"
+        Email="x@x.x"
+        PhotoName="anonymous.png"
+        SecurityQuestion="who"
+        SecurityAnswer="what"
+        Roles="Anonymous,Colaborator,Coordenator"
+       />
+              <user
+        IndividualId="1"
+        FullName="Nuno Goncalo Sousa"
+        UserName="ngs"
+        Password="123"
+        Email="x@x.x"
+        PhotoName="anonymous.png"
+        SecurityQuestion="who"
+        SecurityAnswer="what"
+        Roles="Anonymous,Colaborator"
+       />
+       <user
+        IndividualId="1"
+        FullName="Ricardo Filipe Marta"
+        UserName="rfm"
+        Password="123"
+        Email="x@x.x"
+        PhotoName="anonymous.png"
+        SecurityQuestion="who"
+        SecurityAnswer="what"
+        Roles="Anonymous,Coordenator"
+       />
+</users>

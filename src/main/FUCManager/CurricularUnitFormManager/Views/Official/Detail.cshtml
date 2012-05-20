@@ -1,0 +1,21 @@
+﻿@model CurricularUnitFormManager.Models.CurricularUnit.AbstractCurricularUnitForm
+
+@{
+    ViewBag.Title = "Official Detail";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <ul class="pills" id="menu">
+        @if (Request.IsAuthenticated)
+        {
+            <li>@Html.ActionLink("Edit", "EditOfficial", "Proposal", new { acr = Model.CourseFile.CUnit.Acronym }, null)</li>
+        }
+    </ul>
+}
+<h2>Detail</h2>
+<h2>OfficialCurricularUnitForm</h2>
+<h1>Unidade Curricular Oficial</h1>
+
+@{Html.RenderPartial("_GenericCurricularUnitForm", Model);}
+<a onclick="history.back();return true;">Back</a>

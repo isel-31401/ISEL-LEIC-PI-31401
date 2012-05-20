@@ -1,0 +1,45 @@
+﻿@model CurricularUnitFormManager.Models.CurricularUnit.AbstractCurricularUnitForm
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+<h2>Edit a Proposal</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+<div class="container-fluid">
+    <div class="content">
+        <div class="clearfix">
+            @using (Html.BeginForm("Edit", "Proposal", FormMethod.Post, new { id = "FormEditProposal" }))
+            {
+                Html.ValidationSummary(true, "Proposal edition was unsuccessful. Please correct the errors and try again.");
+                Html.RenderPartial("_GenericEditableCurricularUnitForm", Model);
+
+                <div class="editor-label">
+                    @Html.LabelFor(m => m.Version, "Version:")
+                    @Html.HiddenFor(m => m.Version)
+                    @Html.DisplayFor(m => m.Version, "Version:")
+                </div>
+                <div class="editor-label">
+                    @Html.LabelFor(m => m.Username, "Owner:")
+                    @Html.HiddenFor(m => m.Version)
+                    @Html.DisplayFor(m => m.Username, "Owner:")
+                </div>
+                <div class="editor-label">
+                    @Html.LabelFor(m => m.UserTimeStamp, "Timestamp:")
+                    @Html.HiddenFor(m => m.Version)
+                    @Html.DisplayFor(m => m.UserTimeStamp, "Timestamp:")
+                </div>
+                <div class="editor-label">
+                    @Html.LabelFor(m => m.IsValid, "IsValidated:")
+                    @Html.HiddenFor(m => m.Version)
+                    @Html.DisplayFor(m => m.IsValid, "IsValidated:")
+                </div>
+                <div class="input"><input type='submit' value="Submit" /> <input type='reset' value="Reset"/></div>
+            }
+        </div>
+    </div>
+</div>
